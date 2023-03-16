@@ -1,0 +1,75 @@
+body{
+    background-color: hsl(0, 100%, 98%);
+}
+.item{
+    margin: auto;
+    display: flex;
+    background-color: hsl(0, 100%, 98%);
+    font-size: 16px;  
+}
+.item .card{
+    padding:10px;
+    margin:2px;
+}
+ .item .card img{
+    padding: 20px;
+    margin: 15px;
+    max-width: 75px;
+}
+.item .card .about{
+    font-weight: 600%;
+    font-family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans);
+
+}
+.item .card .about h1{
+    padding: 20px;
+    margin: 10px;
+    line-height: 2rem;
+    letter-spacing: 10px; 
+    font-weight: 500%;
+}
+.item .card .about span{
+    color: hsl(0, 36%, 70%);
+}
+.item .card .about p{
+    padding: 20px;
+    padding-top:0px;
+    margin: 10px;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5rem;
+}
+.item .card .about .mail{
+    padding:10px;
+    margin: 10px;
+    border-radius: 2rem;
+    width: 70%;
+    height: 40px;
+    border: hsl(0, 36%, 70%);
+    color: hsl(0, 36%, 70%);
+    text-align: left;
+}
+.item .beaut img{
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+@media screen and (max-width:375px){
+    .item{
+        flex-direction:column;
+    }
+    .beaut img{
+        width:100%;
+        height:100%;
+        display: 2;
+    }
+    .item .card img{
+        order:-1;
+        display: 0;
+    }
+    .item .card .about{
+        display:none;
+    }
+
+}
